@@ -10,4 +10,14 @@ Domain model should be quite simple, I think we basically have one aggregate to 
     - We need to be able to store new URLMap entries
     - We need to be able to lookup URLMap entries and then route people to the correct URL
     - We will need handling for a "NotFound" behavior
+  
+# Quick Start
+## To run the server
+```gradlew bootRun```
+
+## To compile and then run server
+```
+gradlew bootJar
+java -Dspring.profiles.active=test -jar build/libs/URLMinifier-0.0.1-SNAPSHOT.jar
+```
     

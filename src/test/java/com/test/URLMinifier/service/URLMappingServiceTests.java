@@ -28,7 +28,6 @@ public class URLMappingServiceTests {
         Mockito.when(repo.findById("testAliasExists")).
                 thenReturn(Optional.of(new URLMap("testAliasExists", "http://alias", LocalDateTime.now())));
         String address = mappingService.findUrlForAlias("testAliasExists");
-
         assertEquals("http://alias",address);
     }
 
